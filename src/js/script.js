@@ -41,18 +41,92 @@ $(document).ready(function(){
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
 
-      function onEntry(entry) {
-        entry.forEach(change => {
-          if (change.isIntersecting) {
-            change.target.classList.add('.reviews-show');
-          }
+      // function onEntry(entry) {
+      //   entry.forEach(change => {
+      //     if (change.isIntersecting) {
+      //       change.target.classList.add('.reviews-show');
+      //     }
+      //   });
+      // }
+      // let options = { threshold: [0.5] };
+      // let observer = new IntersectionObserver(onEntry, options);
+      // let elements = document.querySelectorAll('.reviews-animation');
+      // for (let elm of elements) {
+      //   observer.observe(elm);
+      // }
+      $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn();
+      });
+      $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #thanks, #order').fadeOut();
+      });
+      // $('.button_mini').on('click', function() {
+      //   $('.overlay, #order').fadeIn();
+      // });
+      $('.button_mini').each(function(i) {
+        $(this).on('click', function() {
+          $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+          $('.overlay, #order').fadeIn();
         });
+      });
+      
+      // $('#consultation-form').validate();
+      // $('#consultation form').validate({
+      //   rules: {  
+      //     name: "required",
+      //     phone: "required",
+      //     email: {
+      //       required: true,
+      //       email: true
+      //     }
+      //   },
+      //   messages: {
+      //     name: "Пожалуйста, введите своё имя",
+      //     phone: "Пожалуйста, введите свой телефон",
+      //     email: {
+      //       required: "Пожалуйста, введите свою почту",
+      //       email: "Неправильно введена почта",
+      //     } 
+      //   }
+      // });
+      // $('#order form').validate();
+
+      function validateForms(form){
+        $(form).validate({
+          rules: {  
+            name: "required",
+            phone: "required",
+            email: {
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: "Пожалуйста, введите своё имя",
+            phone: "Пожалуйста, введите свой телефон",
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введена почта",
+            } 
+          }
+        }); 
       }
-      let options = { threshold: [0.5] };
-      let observer = new IntersectionObserver(onEntry, options);
-      let elements = document.querySelectorAll('.reviews-animation');
-      for (let elm of elements) {
-        observer.observe(elm);
-      }
+
+      validateForms('#consultation-form');
+      validateForms('#consultation form');
+      validateForms('#order form');
+
+      document.addEventListener("DOMContentLoaded", function() { // используем событие загрузки страницы, не включая картинки и прочее
+        let iframes = document.querySelectorAll('.iframeAdaptive');
+        iframes.forEach(function(i) { // перебираем имеющиеся Iframe с присвоенным нами классом
+            let iframeWidth = i.width; // берём из атрибута width ширину
+            let iframeHeight = i.height; // берём из атрибута height высоту
+            let iframeParent = i.parentNode; // определяем родительский элемент нашего Iframe
+            let parentWidth = parseInt(getComputedStyle(iframeParent)['width'])-parseInt(getComputedStyle(iframeParent)['padding-left'])-parseInt(getComputedStyle(iframeParent)['padding-right']); // берём родительский контейнер и высчитываем нужную нам ширину, без учёта padding, margin и border
+            let iframeProportion = parentWidth / iframeWidth;
+            i.setAttribute('width', parentWidth); // устанавливаем ширину нашим Iframe
+            i.setAttribute('height', iframeHeight * iframeProportion); // устанавливаем высоту нашим Iframe
+        });
+    });
   });
   
