@@ -48,6 +48,8 @@
             font-size: 14px;
             text-decoration: underline;
         }
+        &_animated {
+            animation: heartbeat 1.5s linear infinite;
+        }
     }
-
 }

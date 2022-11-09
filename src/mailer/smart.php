@@ -12,7 +12,7 @@ $mail->CharSet = 'utf-8';
 // $mail->Host = 'smtp.gmail.com'; 
 // $mail->SMTPAuth = true;
 // $mail->Username = 'пример почты';
-// $mail->Password = 'ovheqliniczvyvka';
+// $mail->Password = 'пароль приложения';
 // $mail->SMTPSecure = 'ssl'; 
 // $mail->Port = 465;                            
  

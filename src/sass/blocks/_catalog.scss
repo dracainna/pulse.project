@@ -159,6 +159,9 @@
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
+            a {
+                color: $main-color;
+            }
         }
     }
 }

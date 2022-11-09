@@ -1,3 +1,66 @@
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  to {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 * {
   font-family: "MuseoModerno", sans-serif;
   padding: 0;
@@ -252,6 +315,10 @@
   font-size: 14px;
   text-decoration: underline;
 }
+.benefits__item_animated {
+  -webkit-animation: heartbeat 1.5s linear infinite;
+          animation: heartbeat 1.5s linear infinite;
+}
 
 @media (max-width: 992px) {
   .container {
@@ -297,7 +364,6 @@
   .container .reviews__img {
     margin: 0px 35px 100px -61px;
   }
-
   .header__logo img {
     width: 95%;
   }
@@ -310,7 +376,6 @@
   .header__phone {
     font-size: 16px;
   }
-
   .button {
     width: 145px;
     height: 28px;
@@ -328,11 +393,9 @@
     height: 45px;
     font-size: 16px;
   }
-
   .benefits__item span {
     margin-top: 25px;
   }
-
   .carousel__inner {
     max-width: 576px;
   }
@@ -363,7 +426,6 @@
   .container .consultation__header {
     font-size: 30px;
   }
-
   .header__logo img {
     width: 90%;
   }
@@ -373,7 +435,6 @@
   .header__phone {
     font-size: 15px;
   }
-
   .button {
     width: 138px;
     height: 28px;
@@ -389,7 +450,6 @@
     height: 40px;
     font-size: 14px;
   }
-
   .benefits__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -404,7 +464,6 @@
   .benefits__item {
     margin-bottom: 20px;
   }
-
   .carousel__inner {
     max-width: 425px;
   }
@@ -451,7 +510,6 @@
   .container .title {
     font-size: 26px;
   }
-
   .button {
     width: 138px;
     height: 28px;
@@ -595,7 +653,7 @@
 .consultation {
   min-height: 488px;
   padding: 100px 0px 92px 0px;
-  background: url(../../img/bg2.jpg) center center/cover no-repeat;
+  background: url("../img/bg2.jpg") center center/cover no-repeat;
 }
 .consultation__header {
   font-weight: 700;
@@ -796,8 +854,7 @@
           align-items: center;
 }
 .catalog-item__old-price {
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
+  text-decoration-line: line-through;
   font-weight: 300;
   font-size: 14px;
   color: #555555;
@@ -870,6 +927,9 @@
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
+}
+.catalog-item__back a {
+  color: #C70101;
 }
 
 .reviews {
@@ -986,6 +1046,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.footer iframe {
+  width: 100%;
+  height: 630px;
+  border: 0;
+}
 
 .overlay {
   display: none;
@@ -1038,4 +1103,16 @@
 
 #consultation, #order, #thanks {
   display: none;
+}
+
+.pageup {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 40px;
+  height: 40px;
+}
+.pageup img {
+  width: 100%;
 }
