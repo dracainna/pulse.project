@@ -16,6 +16,9 @@
 }
 
 @media (max-width: 768px) {
+  .footer__info {
+    width: 576px;
+  }
   .container {
     max-width: 576px;
     .catalog {
@@ -100,6 +103,9 @@
 }
 
 @media (max-width: 576px) {
+  .footer__info {
+    width: 425px;
+  }
   .container {
     max-width: 425px;
     .reviews {
@@ -177,6 +183,9 @@
 }
 
 @media (max-width: 425px) {
+  .footer__info {
+    width: 375px;
+  }
   .container {
     max-width: 375px;
     .catalog {
@@ -238,9 +247,31 @@
       font-size: 14px;
     }
   }
+  .modal {
+    &__subtitle {
+      font-size: 17px;
+    }
+    &__close {
+      top: -27px;
+      right: 0px;
+    }
+  }
+  .feed-form {
+    width: 280px;
+  }
+  .pageup {
+    right: 10px;
+    bottom: 10px;
+    img {
+      width: 70%;
+    }
+  }
 }
 
 @media (max-width: 375px) {
+  .footer__info {
+    width: 320px;
+  }
   .container {
     max-width: 320px;
     .reviews {
@@ -320,6 +351,32 @@
 }
 
 @media (max-width: 320px) {
+  .footer__info {
+    width: 260px;
+  }
+  .pageup {
+    right: 0px;
+    bottom: 0px;
+    img {
+      width: 60%;
+    }
+  }
+  .modal {
+    padding: 15px 20px 15px 20px;
+    &__subtitle {
+      font-size: 15px;
+    }
+    &__descr {
+      font-size: 13px;
+    }
+    &__close {
+      top: -27px;
+      right: 0px;
+    }
+  }
+  .feed-form {
+    width: 250px;
+  }
   .container {
     max-width: 300px;
     .carousel {

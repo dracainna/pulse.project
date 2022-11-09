@@ -320,336 +320,6 @@
           animation: heartbeat 1.5s linear infinite;
 }
 
-@media (max-width: 992px) {
-  .container {
-    max-width: 770px;
-  }
-  .container .promo__header {
-    font-size: 40px;
-  }
-  .container .promo__subheader {
-    font-size: 22px;
-  }
-  .container .benefits__title {
-    font-size: 28px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    max-width: 576px;
-  }
-  .container .catalog__content {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .container .promo__header {
-    font-size: 39px;
-  }
-  .container .promo__subheader {
-    font-size: 21px;
-  }
-  .container .promo__link {
-    font-size: 15px;
-  }
-  .container .consultation__header {
-    font-size: 32px;
-  }
-  .container .reviews__item {
-    max-width: 300px;
-  }
-  .container .reviews__descr {
-    font-size: 15px;
-  }
-  .container .reviews__img {
-    margin: 0px 35px 100px -61px;
-  }
-  .header__logo img {
-    width: 95%;
-  }
-  .header__official {
-    font-size: 11px;
-  }
-  .header__official span {
-    font-size: 15px;
-  }
-  .header__phone {
-    font-size: 16px;
-  }
-  .button {
-    width: 145px;
-    height: 28px;
-  }
-  .button_main {
-    margin-top: 67px;
-    width: 276px;
-    height: 50px;
-    left: 1px;
-    top: 2px;
-    font-size: 16px;
-  }
-  .button_submit {
-    width: 100%;
-    height: 45px;
-    font-size: 16px;
-  }
-  .benefits__item span {
-    margin-top: 25px;
-  }
-  .carousel__inner {
-    max-width: 576px;
-  }
-  .carousel__inner img {
-    max-width: 100%;
-  }
-}
-@media (max-width: 576px) {
-  .container {
-    max-width: 425px;
-  }
-  .container .reviews__item {
-    min-width: 425px;
-    text-align: end;
-  }
-  .container .reviews__img {
-    margin-top: 61px;
-  }
-  .container .catalog__tab {
-    font-size: 14px;
-  }
-  .container .promo__header {
-    font-size: 34px;
-  }
-  .container .promo__subheader {
-    font-size: 18px;
-  }
-  .container .consultation__header {
-    font-size: 30px;
-  }
-  .header__logo img {
-    width: 90%;
-  }
-  .header__official {
-    display: none;
-  }
-  .header__phone {
-    font-size: 15px;
-  }
-  .button {
-    width: 138px;
-    height: 28px;
-    font-size: 12px;
-  }
-  .button_main {
-    width: 190px;
-    height: 33px;
-    margin-bottom: -10px;
-  }
-  .button_submit {
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-  }
-  .benefits__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .benefits__item {
-    margin-bottom: 20px;
-  }
-  .carousel__inner {
-    max-width: 425px;
-  }
-  .carousel__inner img {
-    max-width: 100%;
-  }
-}
-@media (max-width: 425px) {
-  .container {
-    max-width: 375px;
-  }
-  .container .catalog__tab {
-    height: 35px;
-    font-size: 12.5px;
-  }
-  .container .catalog__tab div {
-    margin-top: -5px;
-  }
-  .container .reviews__item {
-    min-width: 375px;
-    text-align: center;
-  }
-  .container .reviews__img {
-    margin-left: 113px;
-    float: none;
-    margin-bottom: 31px;
-  }
-  .container .carousel__inner {
-    max-width: 375px;
-  }
-  .container .promo__header {
-    font-size: 29px;
-  }
-  .container .promo__subheader {
-    font-size: 15px;
-    margin-top: 5px;
-  }
-  .container .promo__icons {
-    width: 376px;
-  }
-  .container .promo__link {
-    font-size: 14px;
-  }
-  .container .title {
-    font-size: 26px;
-  }
-  .button {
-    width: 138px;
-    height: 28px;
-    font-size: 12px;
-  }
-  .button_main {
-    width: 196px;
-    height: 36px;
-    font-size: 13px;
-  }
-  .button_submit {
-    width: 100%;
-    height: 40px;
-    font-size: 14px;
-  }
-}
-@media (max-width: 375px) {
-  .container {
-    max-width: 320px;
-  }
-  .container .reviews__item {
-    min-width: 320px;
-    text-align: center;
-  }
-  .container .reviews__img {
-    margin-left: 85px;
-  }
-  .container .carousel__inner {
-    max-width: 320px;
-  }
-  .container .catalog__tab {
-    font-size: 10.5px;
-  }
-  .container .header__phone {
-    font-size: 14px;
-  }
-  .container .button {
-    width: 128px;
-  }
-  .container .promo__header {
-    font-size: 25px;
-  }
-  .container .promo__subheader {
-    margin-top: 0px;
-  }
-  .container .promo__icons {
-    width: 325px;
-    font-size: 13px;
-  }
-  .container .promo__icon img {
-    width: 40px;
-  }
-  .container .promo__link {
-    font-size: 13px;
-  }
-  .container .title {
-    font-size: 24px;
-  }
-  .container .button_main {
-    width: 200px;
-    margin-bottom: -10px;
-  }
-  .container .button_submit {
-    width: 100%;
-    height: 45px;
-    font-size: 14px;
-  }
-  .container .consultation__header {
-    font-size: 21px;
-  }
-  .container .consultation__subheader {
-    font-size: 16px;
-  }
-  .container .feed-form {
-    width: 281px;
-    height: 220px;
-  }
-}
-@media (max-width: 320px) {
-  .container {
-    max-width: 300px;
-  }
-  .container .carousel__inner {
-    max-width: 300px;
-  }
-  .container .reviews__item {
-    min-width: 300px;
-  }
-  .container .reviews__img {
-    margin-left: 75px;
-  }
-  .container .header__phone {
-    font-size: 12px;
-  }
-  .container .button {
-    width: 110px;
-    font-size: 10px;
-  }
-  .container .promo__header {
-    font-size: 21px;
-    margin-top: -30px;
-  }
-  .container .promo__subheader {
-    margin-top: -8px;
-    font-size: 13px;
-  }
-  .container .promo__icons {
-    margin-top: 20px;
-    width: 289px;
-    font-size: 11px;
-  }
-  .container .promo__icon img {
-    width: 35px;
-  }
-  .container .promo__link {
-    font-size: 12px;
-  }
-  .container .title {
-    font-size: 20px;
-  }
-  .container .button_main {
-    width: 185px;
-    margin-bottom: -15px;
-    font-size: 12px;
-  }
-  .container .button_submit {
-    width: 100%;
-    font-size: 13px;
-  }
-  .container .feed-form {
-    width: 243px;
-    height: 213px;
-  }
-  .container .consultation__header {
-    font-size: 19px;
-  }
-  .container .consultation__subheader {
-    font-size: 15px;
-  }
-}
 .consultation {
   min-height: 488px;
   padding: 100px 0px 92px 0px;
@@ -986,7 +656,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  width: 300px;
+  width: 450px;
   background-color: #C70101;
   padding: 50px 25px 56px 25px;
 }
@@ -1115,4 +785,390 @@
 }
 .pageup img {
   width: 100%;
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 770px;
+  }
+  .container .promo__header {
+    font-size: 40px;
+  }
+  .container .promo__subheader {
+    font-size: 22px;
+  }
+  .container .benefits__title {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .footer__info {
+    width: 576px;
+  }
+  .container {
+    max-width: 576px;
+  }
+  .container .catalog__content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .promo__header {
+    font-size: 39px;
+  }
+  .container .promo__subheader {
+    font-size: 21px;
+  }
+  .container .promo__link {
+    font-size: 15px;
+  }
+  .container .consultation__header {
+    font-size: 32px;
+  }
+  .container .reviews__item {
+    max-width: 300px;
+  }
+  .container .reviews__descr {
+    font-size: 15px;
+  }
+  .container .reviews__img {
+    margin: 0px 35px 100px -61px;
+  }
+  .header__logo img {
+    width: 95%;
+  }
+  .header__official {
+    font-size: 11px;
+  }
+  .header__official span {
+    font-size: 15px;
+  }
+  .header__phone {
+    font-size: 16px;
+  }
+  .button {
+    width: 145px;
+    height: 28px;
+  }
+  .button_main {
+    margin-top: 67px;
+    width: 276px;
+    height: 50px;
+    left: 1px;
+    top: 2px;
+    font-size: 16px;
+  }
+  .button_submit {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+  }
+  .benefits__item span {
+    margin-top: 25px;
+  }
+  .carousel__inner {
+    max-width: 576px;
+  }
+  .carousel__inner img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .footer__info {
+    width: 425px;
+  }
+  .container {
+    max-width: 425px;
+  }
+  .container .reviews__item {
+    min-width: 425px;
+    text-align: end;
+  }
+  .container .reviews__img {
+    margin-top: 61px;
+  }
+  .container .catalog__tab {
+    font-size: 14px;
+  }
+  .container .promo__header {
+    font-size: 34px;
+  }
+  .container .promo__subheader {
+    font-size: 18px;
+  }
+  .container .consultation__header {
+    font-size: 30px;
+  }
+  .header__logo img {
+    width: 90%;
+  }
+  .header__official {
+    display: none;
+  }
+  .header__phone {
+    font-size: 15px;
+  }
+  .button {
+    width: 138px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .button_main {
+    width: 190px;
+    height: 33px;
+    margin-bottom: -10px;
+  }
+  .button_submit {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  .benefits__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .benefits__item {
+    margin-bottom: 20px;
+  }
+  .carousel__inner {
+    max-width: 425px;
+  }
+  .carousel__inner img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  .footer__info {
+    width: 375px;
+  }
+  .container {
+    max-width: 375px;
+  }
+  .container .catalog__tab {
+    height: 35px;
+    font-size: 12.5px;
+  }
+  .container .catalog__tab div {
+    margin-top: -5px;
+  }
+  .container .reviews__item {
+    min-width: 375px;
+    text-align: center;
+  }
+  .container .reviews__img {
+    margin-left: 113px;
+    float: none;
+    margin-bottom: 31px;
+  }
+  .container .carousel__inner {
+    max-width: 375px;
+  }
+  .container .promo__header {
+    font-size: 29px;
+  }
+  .container .promo__subheader {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+  .container .promo__icons {
+    width: 376px;
+  }
+  .container .promo__link {
+    font-size: 14px;
+  }
+  .container .title {
+    font-size: 26px;
+  }
+  .button {
+    width: 138px;
+    height: 28px;
+    font-size: 12px;
+  }
+  .button_main {
+    width: 196px;
+    height: 36px;
+    font-size: 13px;
+  }
+  .button_submit {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+  .modal__subtitle {
+    font-size: 17px;
+  }
+  .modal__close {
+    top: -27px;
+    right: 0px;
+  }
+  .feed-form {
+    width: 280px;
+  }
+  .pageup {
+    right: 10px;
+    bottom: 10px;
+  }
+  .pageup img {
+    width: 70%;
+  }
+}
+@media (max-width: 375px) {
+  .footer__info {
+    width: 320px;
+  }
+  .container {
+    max-width: 320px;
+  }
+  .container .reviews__item {
+    min-width: 320px;
+    text-align: center;
+  }
+  .container .reviews__img {
+    margin-left: 85px;
+  }
+  .container .carousel__inner {
+    max-width: 320px;
+  }
+  .container .catalog__tab {
+    font-size: 10.5px;
+  }
+  .container .header__phone {
+    font-size: 14px;
+  }
+  .container .button {
+    width: 128px;
+  }
+  .container .promo__header {
+    font-size: 25px;
+  }
+  .container .promo__subheader {
+    margin-top: 0px;
+  }
+  .container .promo__icons {
+    width: 325px;
+    font-size: 13px;
+  }
+  .container .promo__icon img {
+    width: 40px;
+  }
+  .container .promo__link {
+    font-size: 13px;
+  }
+  .container .title {
+    font-size: 24px;
+  }
+  .container .button_main {
+    width: 200px;
+    margin-bottom: -10px;
+  }
+  .container .button_submit {
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+  }
+  .container .consultation__header {
+    font-size: 21px;
+  }
+  .container .consultation__subheader {
+    font-size: 16px;
+  }
+  .container .feed-form {
+    width: 281px;
+    height: 220px;
+  }
+}
+@media (max-width: 320px) {
+  .footer__info {
+    width: 260px;
+  }
+  .pageup {
+    right: 0px;
+    bottom: 0px;
+  }
+  .pageup img {
+    width: 60%;
+  }
+  .modal {
+    padding: 15px 20px 15px 20px;
+  }
+  .modal__subtitle {
+    font-size: 15px;
+  }
+  .modal__descr {
+    font-size: 13px;
+  }
+  .modal__close {
+    top: -27px;
+    right: 0px;
+  }
+  .feed-form {
+    width: 250px;
+  }
+  .container {
+    max-width: 300px;
+  }
+  .container .carousel__inner {
+    max-width: 300px;
+  }
+  .container .reviews__item {
+    min-width: 300px;
+  }
+  .container .reviews__img {
+    margin-left: 75px;
+  }
+  .container .header__phone {
+    font-size: 12px;
+  }
+  .container .button {
+    width: 110px;
+    font-size: 10px;
+  }
+  .container .promo__header {
+    font-size: 21px;
+    margin-top: -30px;
+  }
+  .container .promo__subheader {
+    margin-top: -8px;
+    font-size: 13px;
+  }
+  .container .promo__icons {
+    margin-top: 20px;
+    width: 289px;
+    font-size: 11px;
+  }
+  .container .promo__icon img {
+    width: 35px;
+  }
+  .container .promo__link {
+    font-size: 12px;
+  }
+  .container .title {
+    font-size: 20px;
+  }
+  .container .button_main {
+    width: 185px;
+    margin-bottom: -15px;
+    font-size: 12px;
+  }
+  .container .button_submit {
+    width: 100%;
+    font-size: 13px;
+  }
+  .container .feed-form {
+    width: 243px;
+    height: 213px;
+  }
+  .container .consultation__header {
+    font-size: 19px;
+  }
+  .container .consultation__subheader {
+    font-size: 15px;
+  }
 }
